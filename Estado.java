@@ -1,3 +1,3 @@
-public class Estado {
+public interface Estado {
     
 }
