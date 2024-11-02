@@ -7,3 +7,4 @@ public class Chefe extends Inimigo {
         System.out.println(getNome() + " usou uma habilidade especial!");
     }
 }
+//ele n tem . plot twsist

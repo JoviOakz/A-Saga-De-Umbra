@@ -13,7 +13,7 @@ public class Main {
         boolean fugirgoblin = false;
         boolean fugir = false;
         while (!fugirgoblin) {
-            System.out.println("\n\nVoce se encontra com um goblin.");
+            System.out.println("\n\nVocê se encontra com um Goblin.");
             while (!fugirgoblin) {
                 System.out.println("O que deseja fazer?");
                 System.out.println("1 - Atacar");

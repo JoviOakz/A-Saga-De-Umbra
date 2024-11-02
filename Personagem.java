@@ -33,10 +33,10 @@ public class Personagem {
     public int getXp() {
         return xp;
     }
-    
+
     public void atacar(Inimigo inimigo) {
         if (estado instanceof Morto) {
-            System.out.println(nome + " está morto e não pode atacar.");
+            System.out.println(nome + " Está morto e não pode atacar.");
             return;
         }
 
@@ -44,13 +44,13 @@ public class Personagem {
         inimigo.receberDano(calcularPoderDeAtaque());
 
         if (inimigo.getVida() <= 0) {
-            System.out.println(inimigo.getNome() + " foi derrotado!");
+            System.out.println(inimigo.getNome() + " Foi derrotado!💀");
             ganharXP(inimigo.getXpRecompensa());
         }
     }
 
     public void defender() {
-        System.out.println(nome + " está se defendendo.");
+        System.out.println(nome + " Está se defendendo como um heroi.");
     }
 
     private int calcularPoderDeAtaque() {
