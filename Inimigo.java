@@ -25,4 +25,10 @@ public class Inimigo {
         vida -= dano;
         System.out.println(nome + " recebeu " + dano + " de dano!");
     }
+
+    public void atacar(Personagem inimigo) {
+
+        System.out.println(nome + " ataca " + inimigo.getNome() + "!");
+        inimigo.receberDano();
+    }
 }

@@ -30,6 +30,10 @@ public class Personagem {
         habilidades.add(habilidade);
     }
 
+    public int getXp() {
+        return xp;
+    }
+    
     public void atacar(Inimigo inimigo) {
         if (estado instanceof Morto) {
             System.out.println(nome + " está morto e não pode atacar.");
@@ -71,10 +75,15 @@ public class Personagem {
         nivel++;
         xp -= xpParaProximoNivel;
         xpParaProximoNivel *= 1.5;
+        habilidades.get(0).setStatus(habilidades.get(0).getStatus() + 5);
         System.out.println(nome + " subiu para o nível " + nivel + "!");
     }
 
     public void realizarAcao() {
         estado.acao(this);
+    }
+
+    public void receberDano(){
+        setEstado(new Ferido());
     }
 }
