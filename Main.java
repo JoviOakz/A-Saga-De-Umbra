@@ -10,10 +10,10 @@ public class Main {
         Inimigo goblin = new Inimigo("Goblin", 20, 200);
         Chefe dragao = new Chefe("Dragão", 100, 1000);
 
-        System.out.println("Voce se encontra com um goblin.");
         boolean fugirgoblin = false;
         boolean fugir = false;
         while (!fugirgoblin) {
+            System.out.println("\n\nVoce se encontra com um goblin.");
             while (!fugirgoblin) {
                 System.out.println("O que deseja fazer?");
                 System.out.println("1 - Atacar");
@@ -52,7 +52,8 @@ public class Main {
                 break;
             }
             
-            System.out.println("Voce se encontra com um dragão.");
+            System.out.println("\n\nVoce se encontra com um dragão.");
+            fugir = false;
             
             while (!fugir) {
 
@@ -87,10 +88,10 @@ public class Main {
             }
         }
         if (heroi.getXp() == 0) {
-            System.out.println("kkkkkkkkkkkk Gayzão com medo de Goblin - Umbra corre agora para sempre de uma onça pintuda - ");
+            System.out.println("E evitou batalhas desnecessárias, e agora descança numa foqueira ao por do sol");
         }
         else{
-            System.out.println("E após tanta matança ele sentou-se numa foqueira no por do sol, caindo em si e seus pensamentos que todo o Stress e as batalhas Sem fim eram desnecessárias e poderiam ser encerradas apenas ignorando-as, essa historia nao é somente sobre Umbra");
+            System.out.println("E após tanta matança ele sentou-se numa foqueira no por do sol, caindo em si exausto percebendo que todo o batalhas sem fim eram desnecessarias e poderiam ser encerradas apenas ignorando-as. \n\n E Morreu...\n\n Essa historia nao eh somente sobre Umbra mas sim voce \n\n");
             heroi.setEstado(new Morto());
             heroi.realizarAcao();
         }
